@@ -1,0 +1,22 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "types": "index.ts",
+  "exports": {
+    "./client": "./index.ts",
+    ".": "./index.ts"
+  }, 
+  "scripts": {
+    "generate": "prisma generate",
+    "migrate": "prisma migrate dev"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "prisma": "^6.19.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  }
+}
